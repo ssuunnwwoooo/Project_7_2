@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/animate.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/style.js"></script>
 </head>
 
@@ -39,6 +41,11 @@
                 <h1><a href="/"><img src="./images/sabon_logo.png" alt=""></a></h1>
             </div>
 
+            <div class="mobile_btn">
+                <button>
+                    <span class="blind">모바일 버튼</span>
+                </button>
+            </div>
         </header>
         <div class="header_wrap">
             <nav class="gnb inner">
@@ -108,85 +115,91 @@
                             <a href="/" class="btn">SHOW MORE</a>
                         </div>
                     </div>
-                    <div class="slide slide02">02</div>
+                    <div class="slide slide02"></div>
                 </div>
             </section>
 
-            <i class="xi-arrow-left"></i>
-            <i class="xi-arrow-right"></i>
-
-
-            <section class="main_menu">
+            <section class="main_menu _se_">
                 <div class="menu_wrap inner">
                     <div class="title">
                         <h2 class="big">BEST SELLER</h2>
                     </div>
-                    <div class="menu_slide">
-                        <figure>
-                            <div class="img_box">
-                                <img src="./images/itm01.png" alt="모이스처라이징 보태니컬 워터 컴포팅 로즈">
-                            </div>
-                            <div class="txt_box">
-                                <h3>모이스처라이징 보태니컬 워터 컴포팅 로즈</h3>
-                                <strong>230ml</strong>
-                                <p>50,000원</p>
-                            </div>
-                        </figure>
-                        <figure>
-                            <div class="img_box">
-                                <img src="./images/itm02.png" alt="로즈 워터 젤리">
-                            </div>
-                            <div class="txt_box">
-                                <h3>로즈 워터 젤리</h3>
-                                <strong>80ml</strong>
-                                <p>130,000원</p>
-                            </div>
-                        </figure>
-                        <figure>
-                            <div class="img_box">
-                                <img src="./images/itm03.png" alt="페이스 폴리셔 민트">
-                            </div>
-                            <div class="txt_box">
-                                <h3>페이스 폴리셔 민트</h3>
-                                <strong>200ml</strong>
-                                <p>70,000원</p>
-                            </div>
-                        </figure>
-                        <figure>
-                            <div class="img_box">
-                                <img src="./images/itm04.png" alt="페이스 폴리셔 민트">
-                            </div>
-                            <div class="txt_box">
-                                <h3>페이스 폴리셔 민트</h3>
-                                <strong>60ml</strong>
-                                <p>30,000원</p>
-                            </div>
-                        </figure>
-                        <figure>
-                            <div class="img_box">
-                                <img src="./images/itm05.png" alt="페이스 폴리셔 클렌즈 폴리쉬 컴포팅 로즈">
-                            </div>
-                            <div class="txt_box">
-                                <h3>2 in 1 페이스 폴리셔 클렌즈 폴리쉬 &amp; 컴포팅 로즈</h3>
-                                <strong>125ml</strong>
-                                <p>65,000원</p>
-                            </div>
-                        </figure>
-                        <figure>
-                            <div class="img_box">
-                                <img src="./images/itm06.jpg" alt="페이스 폴리셔 보태니컬 워터 컴포팅로즈 세트">
-                            </div>
-                            <div class="txt_box">
-                                <h3>페이스 폴리셔 &amp; 보태니컬 워터 컴포팅로즈 세트</h3>
-                                <strong>모이스처라이징 보태니컬 워터 컴포팅 로즈 230ml + 2 in 1 페이스 폴리셔 클렌즈 &amp; 폴리쉬 컴포팅 로즈 60ml</strong>
-                                <p>83,000원</p>
-                            </div>
-                        </figure>
+                    <div class="swiper menu_slide ">
+                        <div class="swiper-wrapper">
+                            <figure class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/itm01.png" alt="모이스처라이징 보태니컬 워터 컴포팅 로즈">
+                                </div>
+                                <div class="txt_box">
+                                    <h3>모이스처라이징 보태니컬 워터 컴포팅 로즈</h3>
+                                    <strong>230ml</strong>
+                                    <p>50,000원</p>
+                                </div>
+                            </figure>
+
+                            <figure class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/itm02.png" alt="로즈 워터 젤리">
+                                </div>
+                                <div class="txt_box">
+                                    <h3>로즈 워터 젤리</h3>
+                                    <strong>80ml</strong>
+                                    <p>130,000원</p>
+                                </div>
+                            </figure>
+                            <figure class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/itm03.png" alt="페이스 폴리셔 민트">
+                                </div>
+                                <div class="txt_box">
+                                    <h3>페이스 폴리셔 민트</h3>
+                                    <strong>200ml</strong>
+                                    <p>70,000원</p>
+                                </div>
+                            </figure>
+                            <figure class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/itm04.png" alt="페이스 폴리셔 민트">
+                                </div>
+                                <div class="txt_box">
+                                    <h3>페이스 폴리셔 민트</h3>
+                                    <strong>60ml</strong>
+                                    <p>30,000원</p>
+                                </div>
+                            </figure>
+                            <figure class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/itm05.png" alt="페이스 폴리셔 클렌즈 폴리쉬 컴포팅 로즈">
+                                </div>
+                                <div class="txt_box">
+                                    <h3>2 in 1 페이스 폴리셔 클렌즈 폴리쉬 &amp; 컴포팅 로즈</h3>
+                                    <strong>125ml</strong>
+                                    <p>65,000원</p>
+                                </div>
+                            </figure>
+                            <figure class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="./images/itm06.jpg" alt="페이스 폴리셔 보태니컬 워터 컴포팅로즈 세트">
+                                </div>
+                                <div class="txt_box">
+                                    <h3>페이스 폴리셔 &amp; 보태니컬 워터 컴포팅로즈 세트</h3>
+                                    <strong>모이스처라이징 보태니컬 워터 컴포팅 로즈 230ml + 2 in 1 페이스 폴리셔 클렌즈 &amp; 폴리쉬 컴포팅 로즈
+                                        60ml</strong>
+                                    <p>83,000원</p>
+                                </div>
+                            </figure>
+                        </div>
                     </div>
                 </div>
+
+                <div class="arrows">
+                    <i class="xi-angle-left-thin left"></i>
+                    <i class="xi-angle-right-thin right"></i>
+                </div>
+
             </section>
 
-            <section class="content">
+            <section class="content _se_">
                 <div class="title">
                     <h2 class="big">PROMOTION</h2>
                 </div>
@@ -205,7 +218,7 @@
                     </div>
                     <div class="itm itm02">
                         <a href="">
-                            <div class="itm_box">
+                            <div class="img_box">
                                 <img src="./images/content02.jpeg" alt="">
                             </div>
                             <div class="txt_box">
@@ -230,7 +243,7 @@
                 </div>
             </section>
 
-            <section class="video">
+            <section class="video _se_">
                 <div class="video_wrap">
                     <div class="video_box">
                         <figure>
@@ -247,13 +260,13 @@
             </section>
 
 
-            <section class="sns">
+            <section class="sns _se_">
                 <div class="sns_wrap">
                     <div class="title inner">
                         <h2 class="big">INSTAGRAM</h2>
                         <p>I WELCOME TO SABON, THE HOME THAT ENLIVENS HEART AND SENSES <strong>#SABON</strong>
-                            <span>@sabonkorea_official</span>
                         </p>
+                        <span>@sabonkorea_official</span>
                     </div>
                     <div class="img_box">
                         <figure>
@@ -275,7 +288,6 @@
             <div class="footer_top inner">
                 <img src="./images/footer.jpeg" alt="">
             </div>
-
         </main>
         <footer class="footer">
             <div class="footer_wrap inner">
