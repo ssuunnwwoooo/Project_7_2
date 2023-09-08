@@ -652,8 +652,8 @@
         /* b */
 
         position: fixed;
-        top: -20px;
-        left: 37%;
+        top: -15px;
+        left: 35%;
         width: 100%;
         z-index: 9999;
         max-width: 65px;
@@ -785,9 +785,9 @@
 
     .mobile_btn {
         display: block;
-
         position: fixed;
-        inset: 15px auto auto 25px;
+        top: 20px;
+        left: 15px;
         z-index: 10000;
         width: 30px;
         height: 30px;
@@ -957,7 +957,7 @@
         /* b */
 
         top: 90%;
-        max-width: 430px;
+        max-width: 350px;
     }
 
     .main_menu .arrows i {
@@ -995,13 +995,18 @@
 
     .main_menu .txt_box {
         margin: 50px 0;
-        height: 50px;
+        height: 80px;
         text-align: center;
+
     }
 
     .main_menu .txt_box h3 {
         font-weight: 500;
         margin: 0 0 5px 0;
+        /* r */
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
     }
 
     .main_menu .txt_box strong {
